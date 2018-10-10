@@ -1,4 +1,122 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  background-color: #dadada;
-  font-size: 10px;
+  background-color: #dddddd;
+  font-size: 75%;
+  font-family: system-ui, helvetica;
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+}
+.container  {
+  background-color: #dddddd;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.emphasis {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #dddddd;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.preview-baku {
+  background-image: url("/images/baku.jpg");
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+.preview-london {
+  background-image: url("/images/london.png");
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.preview-madrid {
+  background-image: url("/images/madrid.jpg");
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.preview-rome {
+  background-image: url("/images/rome.jpg");
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.preview-baku h1, .preview-london h1, .preview-madrid h1, .preview-rome h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+@media screen and (min-width: 575px) {
+   .preview-baku,  .preview-madrid, .preview-rome {
+    margin: 1%;
+    width: 38%;
+    display: inline-block;
+    margin-left: 80px;
+  }
+  .preview-london, .preview-rome {
+    margin: 1%;
+    width: 38%;
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 991px) {
+   .preview-baku {
+    margin: 1%;
+    width: 15%;
+    display: inline-block;
+    height: 175px;
+    margin-left: 16%;
+
+  }
+  .preview-madrid {
+   margin: 1%;
+   width: 15%;
+   height: 175px;
+   display: inline-block;
+
+
+ }
+ .preview-rome {
+   margin: 1%;
+   width: 15%;
+   height: 175px;
+   display: inline-block;
+
+
+ }
+  .preview-london {
+    margin: 1%;
+    width: 15%;
+    height: 175px;
+    display: inline-block;
+    /* margin-right: 16%; */
+
+
+  }
 }
